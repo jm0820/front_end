@@ -1,12 +1,38 @@
-<!DOCTYPE html>
+<!-- 
+    文档类型声明DTD 
+    DTD是什么？
+        HTML 第一行必须是DTD（Document Type Definition,文档类型声明）
+        不写DTD 是会引发浏览器的一些兼容问题的
+        不同版本的HTML有不同的写法   
+-->   
+<!-- 
+    不同版本的HTML 的DTD    
+        HTML5: <!DOCTYPE html>    
+
+    谁在制定版本？
+        w3c(the World Wide Web Consortium，万维网联合会)是万维网的主要国际标准组织，该联盟成立于1994年，负责制定web标准，主要是HTML 和 CSS   
+ -->
+<!DOCTYPE html>        
+
+<!--
+     标签对 
+     body 才是用户能看到的主体部分   
+-->  
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    你好，我一定好好学习前端开发！你好
-</body>
+    <!-- lang 属性是表示网页的语言，zh表示中文，不改也行 -->
+    <!-- 
+        head 标签对儿是网页的配置，不要认为是网页的头部
+    -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>    
+    <!-- 
+        标签对中写网页的内容，包括网页的头部，主要内同、页脚等各个部分 
+     -->
+    <body>
+        你好，我一定好好学习前端开发！你好，王加盟
+    </body>
 </html>
