@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>插入图片</title>
+    <style>
+        /* body{
+            background: gold;
+        } */
+    </style>
+</head>
+<body>
+    <h1>北京景点</h1>
+    <!-- 
+        图片标签
+    <img> 标签是用来再网页中插入图片的
+        <image src="image/gugong.jpg"> 
+        src 是图片的完整存储目录和完整文件命
+    注意：
+    图片必须要复制到项目子文件夹中，一般将文件保存到项目文件夹中的images子文件夹中
+    图片只是被引入到了网页中
+        图片本质上并没有被插入到网页中，只是被引入了网页中，所以要将图片也一起上传到服务器中，将图片复制到项目文件中，即可整体上传
+
+        alt：是图像文本的描述，不是强制性的
+        由于某种原因无法加载图像，浏览器会在页面上显示alt属性中的备用文本
+        供实力不足的朋友使用网页浏览器，也会朗读alt文本
+
+        width height 属性分别设置宽度和高度，单位是像素，但是不需要写单位
+        如果省略其中一个属性，则表示按照原始比例缩放图片
+     -->
+    <p>
+        <img src="../images\gugong.jpg" alt="故宫角楼" width="300"> 
+    </p>
+    <p>
+        <img src="../images\niaochao.jpg" alt="鸟巢-国家体育场">
+    </p>
+    <!-- 
+        网页上支持的图片格式
+        .bmp:windows 画图软件默认保存的格式，位图
+        .gif 支持动画（比如表情包）
+        .jpeg(.jpg)有损压缩图片，用于照片
+        .png 便携式网络图像，用于logo,北京图形等，支持透明和半透明
+        .svg 矢量图片
+        .webp 最新的压缩算法非常优秀的图片格式
+     -->        
+     <img src="../images\goblin.png" alt="">    
+
+     <!-- 
+         相对路径和绝对路径    
+         相对路径：从网页出发，如何找到图片，比如前面路由左转，直走100米就到了
+         随着网页和图片的位置关系不同，插入图片的代码随之改变
+      -->     
+</body>
+</html>

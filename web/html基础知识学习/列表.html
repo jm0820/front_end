@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>列表</title>
+</head>
+<body>
+    <!-- 无序列表 -->
+    <h1>要购买的东西</h1>    
+    <ul>
+        <li>牛奶</li>
+        <li>
+            咖啡
+            <p>千万不要买黑咖啡，太苦了</p>
+        </li>
+    </ul>           
+
+    <!-- 
+        ol 注意事项
+        li 标签不能散着放,必须是ol或者ul下面的子标签
+        ol 的子标签只能是li标签    
+        ol 标签可以设置type 属性,用来设置编号的类型
+            a:表示小写英文字母编号
+            A:表示大写英文字母编号
+            i:表示小写罗马数字编号
+            I:表示大写罗马数字编号
+            1:表示数字编号(默认)  
+        ol 标签还有start 属性
+            start 属性值必须是一个整数,指定了列表编号的起始值
+            此属性值应为阿拉伯数字,尽管列表条目的编号类型type 属性可能指定了为罗马数字编号等其他类型的编号
+        ol 标签的reversed 属性
+            reversed 属性指定列表种的条目是否是倒叙排列的
+            reversed 属性不需要值,只需要写reversed 单词即可,这是HTML5的全新特性
+     -->   
+     <h1>考试成绩排名</h1>     
+     <ol type="a" start="6" reversed>
+         <li>小慕</li>
+         <li>小明</li>
+         <li>小红</li>
+         <li>小强</li>
+     </ol>
+     <!-- 
+         定义列表
+         dl 是定义列表标签,内容交替出现dt dd 标签
+         也允许dt dd 不交替出现,而是分别处于不同的定义列表中     
+
+         哪里使用定义列表
+            使用什么标签,不应该看样式,应该看语义
+            只有语义上有"解释说明"含义的问庄子,且为列表形式,应该使用定义列表
+      -->        
+      <h1>前端主要技术简介</h1>
+      <dl>
+          <dt>html</dt>
+          <dd>超文本标记语言</dd>
+          <dt>css </dt>
+          <dd>层叠样式表</dd>
+
+          <dt>javascript</dt>
+          <dd>JS 脚本程序</dd>
+
+      </dl>
+</body>
+</html>

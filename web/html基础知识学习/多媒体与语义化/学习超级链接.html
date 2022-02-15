@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习超级链接</title>
+</head>
+<body>
+
+    <!-- 
+        href 属性支持相对路径和绝对路径
+        target 设置为blank（html4 需要使用_blank），即可在新标签中打开网页
+     -->
+    <p>
+        <a href="旅游.html" target="blank">去看我的旅游分享</a>
+    </p>   
+
+    <!-- 
+        a 标签的title 属性
+        用于设置鼠标的悬停文本
+     -->
+    <p>
+        <a href="../../学习插入图片.html" title="学习插入图片">学习插入图片</a>
+    </p>   
+    
+    <!-- 
+        给图片设置超级链接
+        用 <a> 标签包裹img 标签即可
+     -->
+     <a href="https://www.imooc.com/" target="blank">
+         <img src="../../../images\goblin.png" alt="小精灵">
+     </a>   
+
+     <!-- 
+         页面内锚点
+         较长的页面，可以适当给h系列标签添加id属性，它将成为页面的"锚点"   
+         当网址后面添加#时，页面将自动滚动到锚点所在位置
+
+         其他页面的超链接，可以链接到指定锚点
+      -->        
+      <p>
+            <a href="旅游.html#wuxi">重点推荐无锡</a>
+    </p>   
+
+    <!-- 
+        下载链接
+        指向exe,zip,rar等文件格式的链接，将i自动成为下载链接
+
+        邮件链接，电话链接    
+        有mailto:前缀的链接时邮件链接，系统将自动打开email相关软件   
+
+        有tel:前缀的链接是电话链接，系统将自动打开拨号盘   
+     -->
+     <p>
+        <a href="mailto:18717545422@153.com">给小编发送邮件</a>    
+     </p>
+     
+
+     <p>
+        <a href="tel:12306">打电话给铁路</a>  
+     </p>
+    
+</body>
+</html>
