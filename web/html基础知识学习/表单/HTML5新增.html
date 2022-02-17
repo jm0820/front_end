@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+          <!--
+            html5 中新增的
+            color  颜色选择控件
+            date,time 日期时间选择控件
+            email 电子邮件输入控件
+            file 文件选择控件
+            number 数字输入控件
+            range 拖拽条
+            search 搜索框
+            url 网址输入控件
+        -->
+        <p>
+            颜色选择控件：
+            <input type="color">
+        </p>
+        <p>
+            日期选择控件：
+            <input type="date">
+        </p>
+        <p>
+            时间选择控件：
+            <input type="time">
+        </p>
+        <p>
+            电子邮件输入控件：
+            <input type="email">
+        </p>
+
+        <p>
+            必填：
+            <input type="text" required>
+        </p>
+        
+        <p>
+            数字
+            <input type="number" max="10" min="1">
+        </p>
+
+        <p>
+            拖拽条
+            <input type="range" max="10" min="1">
+        </p>
+
+        <p>
+            搜索框
+            <input type="search">
+        </p>
+
+        <p>
+            网址：
+            <input type="url">
+        </p>
+        <p>
+            <input type="submit" value="提交表单">
+        </p>
+
+        <!-- 
+            datalist控件   
+            为输入框提供一些备选项，当用户输入的内容与备选文字相同时，就会显示智能感应
+         -->
+         <p>
+             省份：
+             <input type="text" list="province">
+             <datalist id="province">
+                <option value="山西">山西</option>
+                <option value="山东">山东</option>
+                <option value="广西">广西</option>
+                <option value="广东">广东</option>
+                <option value="河南">河南</option>
+                <option value="河北">河北</option>
+             </datalist>
+         </p>
+    </form>
+   
+</body>
+</html>
