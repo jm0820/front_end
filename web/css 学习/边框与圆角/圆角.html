@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        div{
+            margin-bottom: 20px;
+        }
+        /*
+            border-radius 属性    
+            表示圆角的半径
+            可以但单独设置四个角
+
+            也可以以百分比为单位，表示圆角起始于每条边的哪里
+            正圆形：正方形的盒子如果设置为border-radius 属性为50%，就是正圆形
+            椭圆型：长方形的盒子如果设置为border-radius 属性为505,就是椭圆形
+        */
+        .box1{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            border-radius: 10px;
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            border-radius: 20px;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            border-radius: 50px;
+        }
+        .box5{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            border-radius: 20px 40px 60px 80px;
+        }
+
+        .box6{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            border-radius: 40px;
+            border-bottom-right-radius: 0;
+        }
+
+        .box7{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            border-radius: 50%;
+           
+        }
+
+        .box8{
+            width: 400px;
+            height: 200px;
+            border: 1px solid #000;
+            border-radius: 50%;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7">圆形</div>
+    <div class="box8">椭圆</div>
+</body>
+</html>
