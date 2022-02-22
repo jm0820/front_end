@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+          绝对定位：盒子可以在浏览器中以坐标进行位置精准描述，拥有自己的绝对位置
+        
+          位置描述词：
+          left 到左边的距离，right 到右边的距离，top到上边的距离，bottom 到下边的距离     
+
+
+          绝对定位的脱离标准文档流
+          绝对定位的元素脱离标准文档流，将释放自己的位置，对其他元素不会产生任何干扰，而是对它们进行压盖   
+
+          脱离标准文档流的方法：浮动，绝对定位，固定定位     
+
+          绝对定位的参考盒子：
+          绝对定位的盒子并不是永远以浏览器作为基准点
+          绝对定位的盒子会以自己祖先元素中，离自己最近的拥有定位属性的盒子，当作基准点，这个盒子通常是相对定位的，所以这个性质也叫做”子绝父相“    
+
+
+          绝对定位的盒子垂直居中：
+          
+          堆叠顺序z-index属性：
+          z-index属性是一个没有单位的正整数，数值大的能够压住数值小的
+          
+
+
+        */
+        .box1 {
+            position: absolute;
+            bottom: 0px;
+            right: 400px;
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+
+        .box3 {
+            position: absolute;
+            left: 300px;
+            top: 400px;
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+
+        .box4 {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+
+    </div>
+
+
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+</body>
+</html>
